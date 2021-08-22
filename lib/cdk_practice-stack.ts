@@ -12,7 +12,7 @@ export class CdkPracticeStack extends cdk.Stack {
     });
 
     new apigw.LambdaRestApi(this, "Endpoint", {
-      handler: hello,
+      handler: hello, // this the lambda function name
     });
   }
 }
